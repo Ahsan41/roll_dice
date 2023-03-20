@@ -16,12 +16,12 @@ rollDiceBtn.addEventListener(`click`,rolldicehandler)
 
 var currentplayer = 1
 
-
+let temp;
 
 function rolldicehandler(){
 var dicenumber= Math.ceil (Math.random()*6)
 diceImg.classList.remove(`hidden`)
-diceImg.src=`.assets/${dicenumber}.png`
+diceImg.src=`./assets/${dicenumber}.png`
 
 if (dicenumber == 1) {
    if (currentplayer == 1) {
@@ -40,6 +40,8 @@ if (dicenumber == 1) {
      
    } else {
       player2Dicescore.textContent = Number(player2Dicescore.textContent) + dicenumber
+      temp = Number(player2Dicescore.textContent)
+      console.log(temp);
    }
 }
 }
@@ -64,9 +66,9 @@ function holdbtnhandler(){
    }
    else{
    currentplayer=1
-   player2score.textContent=Number(player2score.textContent)+ Number(player2Dicescore.textcontent)
+   console.log(temp)
+   player2score.textContent=Number(player2score.textContent)+ Number(temp)
    player2Dicescore.textContent=0;
-   console.log(player2score.textContent)
    }
    if (Number(player2score.textContent) >= 50) {
       alert("Player 1 wins")
