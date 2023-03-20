@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainwindow{
+    height: 400px;
+    width: 600px;
+    display:flex;
+    margin: 130px auto;
+    position: relative;
+    border: 10px;
+}
+
+.active{
+    /* background-color: rgba(218, 226, 230, 0.3) */
+    background-color: rgba(217, 21, 21, 0.9);
+}
+.player1{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(228, 210, 12);
+    /* background-color: rgb(232, 229, 19) */
+
+    
+}
+.player2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   /* height: 57vh; */
+   color: rgb(121, 184, 12);
+   height: 400px;;
+   /* background-color: rgba(33, 105, 9, 0.758); */
+    /* background-color: aliceblue; */
+}
+
+.centre{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    /* transform: translateX(50); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.centre button{
+    border-radius: 30px;
+    padding: 15px auto;
+    font-size: 20px;
+    background-color: beige;
+       
+}
+ /* .hidden{
+    display: none; */
+/* }  */
+.pic{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(assets/dice.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
